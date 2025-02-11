@@ -42,7 +42,7 @@ A simple Hello World program built with CMake.
 After building, run the program from the build directory:
 
 ```bash
-./src/hello_world
+./PersonProject
 ```
 
 ## License
