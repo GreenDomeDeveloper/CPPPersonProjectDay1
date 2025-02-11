@@ -10,14 +10,38 @@ A simple Hello World program built with CMake.
 ## Project Structure
 
 ```
-.
-├── CMakeLists.txt          # Root CMake configuration
-├── src/
-│   ├── CMakeLists.txt      # Source-specific CMake configuration
-│   └── main.cpp           # Main source file
-├── LICENSE
+. 
+├──  # Root CMake configuration 
+├── src/  
+│ ├── Person.cpp # Person class implementation 
+│ ├── Person.hpp # Person class declaration 
+│ └── main.cpp # Main source file 
+├── .gitignore  
+├── LICENSE 
 └── README.md
 ```
+
+## Person Class Overview
+
+The `Person` class is a simple representation of a person with a name and age. It provides functionality to get and set these attributes, as well as increment the age.
+
+### Private Member Variables
+
+- `name`: A string representing the name of the person.
+- `age`: An integer representing the age of the person.
+
+### Public Member Functions
+
+- `string getName()`: Returns the name of the person.
+- `int getAge()`: Returns the age of the person.
+- `void setName(string newName)`: Sets the name of the person.
+- `void setAge(int newAge)`: Sets the age of the person.
+- `void hasBirthday()`: Increments the age of the person by one.
+
+### Constructors
+
+- `Person()`: Default constructor that initializes the name to "John Doe" and the age to 42.
+- `Person(string newName, int newAge)`: Parameterized constructor that allows setting the name and age.
 
 ## Building the Project
 
